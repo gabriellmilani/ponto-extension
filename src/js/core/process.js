@@ -16,6 +16,10 @@ export const process = async () => {
   const logger = useLogger(debug)
 
   logger.debug('Process has been called with config: ', config)
+  logger.debug(
+    'Extension manifest version: ',
+    chrome.runtime.getManifest().version
+  )
 
   injectTheme(theme)
 
@@ -51,7 +55,7 @@ export const process = async () => {
   const shouldExitAt = calculateExitTime(
     firstShiftStart,
     timeWorking,
-    timeInInterval || timeStringToMs(estimatedInterval),
+    secondShiftStart ? timeInInterval : timeStringToMs(estimatedInterval),
     timeRemaining
   )
 

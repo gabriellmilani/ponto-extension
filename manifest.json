@@ -2,7 +2,7 @@
   "manifest_version": 2,
   "permissions": ["activeTab", "storage"],
   "name": "Calcular horário de saída",
-  "version": "3.4",
+  "version": "3.5",
   "author": "Gabriel Kuhn & João Bianchini",
   "description": "Calculadora do horário de saída para a página do ponto da CWI",
   "content_scripts": [
