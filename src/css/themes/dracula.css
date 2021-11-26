@@ -1,0 +1,107 @@
+/* Dracula color palette - https://draculatheme.com/contribute */
+:root {
+  --background: #282a36;
+  --current-line: #44475a;
+  --foreground: #f8f8f2;
+  --comment: #6272a4;
+  --cyan: #8be9fd;
+  --green: #50fa7b;
+  --orange: #ffb86c;
+  --pink: #ff79c6;
+  --purple: #bd93f9;
+  --red: #ff5555;
+  --yellow: #f1fa8c;
+}
+
+html,
+div,
+main,
+form {
+  background-color: var(--background);
+  color: var(--foreground);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  color: var(--pink);
+}
+
+::selection {
+  background-color: var(--comment);
+}
+
+#ctl00_cphPrincipal_btnRegisterTime {
+  background-color: var(--green);
+  color: var(--current-line);
+  border: 0;
+  text-shadow: none;
+}
+
+#batataMessage {
+  color: var(--yellow);
+}
+
+#ribbonParent {
+  border: none !important;
+}
+
+.selected-item:hover {
+  color: var(--current-line);
+}
+
+td {
+  color: var(--purple);
+}
+
+small,
+span:not(.five.columns) {
+  color: var(--foreground) !important;
+}
+
+a,
+a:visited {
+  color: var(--cyan) !important;
+}
+
+a:hover {
+  color: var(--pink) !important;
+  border-bottom: 2px solid var(--pink);
+  background-color: transparent !important;
+}
+
+.selected-item:not(:hover) {
+  background-color: transparent !important;
+  border-bottom: 2px solid var(--cyan);
+}
+
+li:hover {
+  background-color: transparent !important;
+}
+
+/* Monthly report */
+
+#main > b,
+#ctl00_cphPrincipal_lblMessage {
+  color: var(--red) !important;
+}
+
+/* Quarterly control grid */
+
+#grid-balance td,
+#grid-balance th {
+  border: none !important;
+}
+
+#grid-balance td:not([class]) {
+  color: var(--foreground);
+}
+
+#ctl00_cphPrincipal_ddlPeriod {
+  background-color: var(--current-line);
+  border: 1px solid var(--pink) !important;
+  color: var(--pink) !important;
+  padding: 4px;
+}

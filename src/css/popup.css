@@ -1,0 +1,64 @@
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+.content {
+  background-color: #1b1b1b;
+  color: #f0f6fc;
+  padding: 16px;
+  font-size: 12px;
+  text-align: center;
+}
+
+.title {
+  font-size: 14px;
+  color: #4aace9;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  text-align: left;
+  min-width: 128px;
+  margin-top: 16px;
+}
+
+input, select {
+  padding: 8px;
+  border-radius: 4px;
+  margin-bottom: 8px;
+  align-self: flex-start;
+}
+
+input[type='time'], select {
+  width: 100%;
+}
+
+label {
+  align-self: flex-start;
+  color: #4aace9;
+  font-weight: bold;
+  margin-bottom: 2px;
+}
+
+button {
+  border: none;
+  outline: none;
+  padding: 8px;
+  margin-top: 8px;
+  border-radius: 4px;
+  background-color: #4aace9;
+  width: 100%;
+  min-height: 33px;
+}
+
+button:hover:not(:disabled) {
+  background-color: #3d8dbe;
+  cursor: pointer;
+}

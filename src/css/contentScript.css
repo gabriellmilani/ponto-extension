@@ -1,0 +1,20 @@
+#batataWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  width: 100%;
+}
+
+#batataMessage {
+  display: block;
+  text-align: center;
+  font-family: sans-serif;
+  line-height: normal;
+  padding: 8px;
+}
+
+#batataImage {
+  height: 228px;
+}
